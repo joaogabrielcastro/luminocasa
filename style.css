@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+   
+}
+
+body {
+    font-family: Arial;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+main{
+    background-color: #ebebeb;
+}
+.background {
+    background-color: rgb(221, 194, 42);
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+
+.nav-bar{
+    left:40%;
+    position: absolute;
+}
+
+  
+.background-inner-content {
+    max-width: 4000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 2rem;
+}
+
+.logo {
+    color: rgb(16, 16, 184);
+}
+
+.logo span {
+    color: white;
+}
+
+.background ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.background li {
+    color: white;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.background li:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.background-inner-content a:hover {
+    color: white;
+}
+
+.header-bottom-side {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 2rem;
+}
+.carrinho{
+    font-size: 20px;
+}
+.header-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left h2 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.header-bottom-side-left h1 {
+    font-size: 7rem;
+    margin-bottom: 3.5rem;
+}
+
+.header-bottom-side-left button {
+    background-color:rgb(221, 194, 42);
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.header-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img {
+    width: 65%;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .header-bottom-side {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+    }
+}
+@media (max-width: 768px) {
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.gray-background {
+    background-color: rgb(78, 73, 73);
+}
+
+.page-inner-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols {
+    display: flex;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.cards {
+    width: 325px;
+    height: 325px;
+    animation: slidein infinite;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+.cols-3 img{
+    max-width: 100%;
+}
+.cols-4 img{
+    max-width: 100%;
+}
+
+.cols-4 .fourth-column {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.cols>*{
+    cursor: pointer;
+    transition: all 0,5ms;
+
+}
+.cols>*:hover{
+    transform: translate(-5px);
+    
+}
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+.product{
+    color: black;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.product-name{
+    font-weight: 800;
+    margin-top: 0,4rem;
+   
+}
+.rate{
+    color: rgba(219, 219, 64, 0.938);
+    font-size: 2rem;
+
+}
+.product-price{
+    font-weight: 600;
+    font-size: 20px;
+}
+.name{
+   font-size: 20px;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color:rgb(78, 73, 73);
+    color: aliceblue;
+    gap: 3rem;
+}
+.lampadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lampadas .product {
+    width: calc(55% - 20px); /* 25% para 4 colunas, subtraindo a margem */
+    margin: 70px;
+    text-align: center; /* Alinhe o texto ao centro */
+}
+.refletores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.refletores .product{
+    width: calc(55% - 20px); /* 25% para 4 colunas, subtraindo a margem */
+    margin: 70px;
+    text-align: center; /* Alinhe o texto ao centro */
+}
+
+.first-column{
+    width: calc(55% - 30px); /* 25% para 4 colunas, subtraindo a margem */
+    margin: 0px 70px 70px 70px; /* Ajuste conforme necessário */
+    text-align: center; /* Alinhe o texto ao centro */
+    display: flex;
+    flex-wrap: wrap;
+    position: inherit;
+
+}
+
+#buttonjs{
+    border-radius: 20px;
+    width: 60px; /* largura do botão */
+    height: 60px; /* altura do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color:rgb(221, 194, 42); /* cor de fundo do botão */
+
+ } 
+ #buttonjs::before{
+    content: '';
+    height: 2px; /* altura */
+    width: 20px; /* largura da haste */
+    background-color: #fff; /* cor da haste. Deve ser igual à cor da seta */
+    margin-left: -1px; /* afasta um pouco da esquerda para ajustar à seta */
+    position: absolute;
+ }
+ 
+ /* seta pra direita > */
+ #buttonjs::after{
+    content: '';
+    /* rotaciona a seta para ficar virada pra direita */
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+    
+    border-bottom-style: solid;
+    border-bottom-width: 2px; /* largura da seta (parte de cima) */
+    border-right-style: solid;
+    border-right-width: 2px; /* largura da seta (parte de baixo) */
+    /* height e width devem ter o mesmo valor */
+    height: 12px; /* altura da seta */
+    width: 12px; /* largura da seta */
+    margin-left: 3px; /* desloca pra direita para ajustar */
+    border-color: #fff; /* cor da seta */
+ }
+ 
+ #buttonjs:hover{
+    background-color: #b4a202; /* cor de fundo do botão quando passa o mouse */
+ }
+ .cols .product {
+    width: calc(55% - 30px);
+    margin: 0px 70px 70px 70px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: inherit;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+}
+
+.cols .product:hover {
+    transform: translate(-5px) scale(1.05); /* Aplica o efeito de deslocamento e aumento quando o mouse está sobre o item */
+}
